@@ -1,0 +1,34 @@
+.search-box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 50px auto;
+  max-width: 100%;
+  width: 700px;
+  @media screen and (max-width: 1200px) {
+    margin: 20px auto;
+  }
+
+  .search-box__input {
+    outline: none;
+    border: none;
+    padding: 15px 25px;
+    background: none;
+    border: 2px #333 solid;
+    color: #ccc;
+    font-weight: 600;
+    margin: 10px auto;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 50px;
+  }
+  .search-box__results {
+    overflow-y: auto;
+    max-height: 430px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

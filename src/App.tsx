@@ -1,6 +1,6 @@
 import logo from './assets/logo.png';
 import './App.scss';
-import Search from './components/Search';
+import SearchPage from './pages/SearchPage';
 import {
   RouterProvider,
   createBrowserRouter,
@@ -13,7 +13,7 @@ import CharacterPage from './pages/CharacterPage';
 function App() {
   const router = createBrowserRouter(
     [
-      { path: '/', element: <Search /> },
+      { path: '/', element: <SearchPage /> },
       { path: '/character/:id', element: <CharacterPage /> },
     ],
     {
