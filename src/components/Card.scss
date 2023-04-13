@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  gap: 3px;
+  background: #222;
+  border-radius: 10px;
+  border: 1px solid #333;
+  padding: 20px;
+  &__name {
+    font-weight: 700;
+    font-size: 25px;
+  }
+  &__homeworld {
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 16px;
+    color: #aaa;
+  }
+}
+a {
+  all: unset;
+  cursor: pointer;
+}
