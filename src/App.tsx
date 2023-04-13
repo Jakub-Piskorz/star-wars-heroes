@@ -11,15 +11,20 @@ import {
 import CharacterPage from './pages/CharacterPage';
 
 function App() {
-  const router = createBrowserRouter([
-    { path: '/', element: <Search /> },
-    { path: '/character/:id', element: <CharacterPage /> },
-  ]);
+  const router = createBrowserRouter(
+    [
+      { path: '/', element: <Search /> },
+      { path: '/character/:id', element: <CharacterPage /> },
+    ],
+    {
+      basename: '/star-wars-heroes',
+    }
+  );
 
   return (
     <div className="App">
       <div className="header">
-        <a href="/">
+        <a href="/star-wars-heroes">
           <div className="logo">
             <img src={logo} className="logo" alt="Logo" />
           </div>

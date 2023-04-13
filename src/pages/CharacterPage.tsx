@@ -75,7 +75,7 @@ const CharacterPage = () => {
                     films[filmURL].releaseDate
                   }, opening crawl: ${films[filmURL].openingCrawl.slice(
                     0,
-                    120
+                    130
                   )}...`}
                 />
               ))}
